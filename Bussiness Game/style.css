@@ -1,3 +1,4 @@
+/* MAIN COMPONENTS */
 * {
   margin: 0;
   padding: 0;
@@ -18,39 +19,34 @@
   flex-grow: 0;
 }
 
-.player-1 {
+.player-sec {
   justify-content: flex-start;
   flex-basis: 40%;
   text-align: center;
   width: 100%;
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
+  background-color: #22b8cf;
 }
 
-.bank {
+.middle-sec {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-basis: 20%;
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
+  background-color: #0b7285;
 }
 
 .borrow-btn {
-}
-
-.player-2 {
-  justify-content: flex-start;
-  flex-basis: 40%;
-  text-align: center;
-  width: 100%;
-  border: 2px solid #000;
+  background-color: #22b8cf;
 }
 
 /* BOARD */
 .board {
   flex-basis: 70%;
   height: 100vh;
-  background-color: #000;
+  background-color: #0b7285;
   display: grid;
   gap: 2px;
   grid-template-columns: repeat(6, 1fr);
@@ -68,11 +64,34 @@
 .cell > h2 {
   border: 2px solid #444;
   border-top: none;
+  display: block;
 }
 
 .cell > h3 {
   border: 2px solid #444;
   border-bottom: none;
+  display: block;
+}
+
+/* CELL COLORS */
+.teal {
+  background-color: #12b886;
+}
+
+.pink {
+  background-color: #fcc2d7;
+}
+
+.green {
+  background-color: #8ce99a;
+}
+
+.yellow {
+  background-color: #ffe066;
+}
+
+.grape {
+  background-color: #e599f7;
 }
 
 .cell-7,
@@ -136,7 +155,41 @@
   grid-row: 2;
 }
 
+/* ------------------- */
+/* PLAYERS COIN */
+/* ------------------- */
+.players {
+  display: flex;
+  gap: 5px;
+}
+
+.player {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.player2 {
+  background-color: #000;
+}
+
+.player3 {
+  background-color: #501111;
+}
+
+.player4 {
+  background-color: #162050;
+}
+/* ------------------- */
+
+/* ------------------- */
+/* Right Side */
+/* ------------------- */
 .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-basis: 15%;
   height: 100vh;
   background-color: #444;
